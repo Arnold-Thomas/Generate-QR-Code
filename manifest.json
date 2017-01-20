@@ -1,0 +1,20 @@
+{
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "128": "icon128.png",
+        "16": "icon16.png",
+        "48": "icon48.png"
+    },
+    "manifest_version": 2,
+    "name": "Generate QR Code",
+    "description": "Generate QR Code for the active tab",
+    "version": "0.0.1",
+    "permissions": ["activeTab", "contextMenus", "tabs"],
+    "applications": {
+        "gecko": {
+            "id": "qrcode@linuxmail.org"
+        }
+    }
+}
