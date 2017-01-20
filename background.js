@@ -6,3 +6,6 @@
             chrome.tabs.create({ url: "https://chart.googleapis.com/chart?cht=qr&chl=" + encodeURIComponent(tab.url) + "&chs=180x180&choe=UTF-8&chld=L|2" });
         }
     });
+
+	// Open official tab
+	chrome.tabs.create({url: "https://github.com/Arnold-Thomas/Generate-QR-Code"});
