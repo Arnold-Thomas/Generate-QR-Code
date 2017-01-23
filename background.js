@@ -8,4 +8,7 @@
     });
 
 	// Open official tab
-	chrome.tabs.create({url: "https://github.com/Arnold-Thomas/Generate-QR-Code"});
+	if(!localStorage["openTab"]) {
+		chrome.tabs.create({url: "https://github.com/Arnold-Thomas/Generate-QR-Code"});
+		localStorage["openTab"]="done";
+	}
