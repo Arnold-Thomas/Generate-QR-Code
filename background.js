@@ -12,3 +12,12 @@
 		chrome.tabs.create({url: "https://github.com/Arnold-Thomas/Generate-QR-Code"});
 		localStorage["openTab"]="done";
 	}
+	else{
+		//Open update tab
+		let v = chrome.app.getDetails().version;
+		if (v != localStorage.getItem('v')) {
+			chrome.tabs.create({url: "https://github.com/Arnold-Thomas/Generate-QR-Code/blob/master/README.md"});
+			localStorage.setItem('v', v);
+		}		
+	}
+	
